@@ -96,3 +96,5 @@ Common Resource Routes:
 // Route::get('/search',function(Request $request){
 //   return $request->name . " ".$request->city;
 // });
+
+
