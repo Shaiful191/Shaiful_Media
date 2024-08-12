@@ -18,15 +18,16 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(5)->create();
         \App\Models\Blog::factory(10)->create();
          
-        $user= User::factory()->create([
-            'name'=> 'John Doe',
-            'email'=> 'john@gmail.com'
-        ]);
+        // $user= User::factory()->create([
+        //     'name'=> 'Shaiful Islam',
+        //     'email'=> 'saifulislamridoy1999@gmail.com',
+        //     'password'=>'@kostocse',
+           
+            
+        // ]);
 
 
-        Blog::factory(6)->create([
-            'user_id'=> $user->id
-        ]);
+      //  Blog::factory(6)->create();
         
         // Listing::create([
         //     'title' => 'Laravel Senior Developer',

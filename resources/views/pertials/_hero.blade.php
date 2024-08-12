@@ -5,7 +5,7 @@
         style="background-image: url('images/laravel-logo.png')"></div> -->
 
     <div class="z-10 ">
-        <h1 class=" text-6xl  font-bold uppercase text-slate-400">
+        <h1 class=" text-4xl  font-bold uppercase text-slate-400">
             Shaiful<span class="text-indigo-500">Media</span>
         </h1>
         <p class="text-2xl text-slate-400 font-bold mt-4">
