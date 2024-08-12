@@ -28,12 +28,19 @@ $formattedDate = $date->format('M d, Y');
                    
 
                     <div class="">
+                        <img class="md:w-50 mr-6 mb-6 w-50 h-72" src="{{
+       
+        asset('images/card.jpg')
+        
+        }}" alt="" />
+                    </div>
+                    <!-- <div class="">
                         <img class="md:w-50 mr-6 mb-6 w-70 h-25" src="{{
         $blog->logo ? asset('storage/'. $blog->logo)
         : asset('images/no_image.jpg')
         
         }}" alt="" />
-                    </div>
+                    </div> -->
 
                     <div class="pr-5 ">
                         <h3 class="mb-2 text-start lg:text-6xl text-3xl font-bold text-white">{{$blog->title}}</h3>

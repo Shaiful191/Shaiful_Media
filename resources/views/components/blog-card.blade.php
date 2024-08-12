@@ -9,9 +9,8 @@ $shrotTitleLength= strlen($shrotTitle);
 
 <x-card>
   <div class="max-w-md rounded overflow-hidden shadow-lg bg-white">
-    <img class="w-full h-60" src="{{
-        $blog->logo ? asset('storage/'. $blog->logo)
-        : asset('images/no_image.jpg')}}"alt="Image">
+    <img class="w-full h-72" src="{{
+        asset('images/card.jpg')}}"alt="Image">
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">
         <a href="/blogs/{{$blog->id}}">{{$blog->title}}</a>
