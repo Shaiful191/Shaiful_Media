@@ -60,10 +60,10 @@
 </head>
 
 <body class="min-h-screen flex flex-col">
-    <nav class="bg-slate-800 flex justify-between items-center p-5 ">
+    <nav class="bg-slate-800 flex justify-between items-center p-5 pb-16">
 
         <a href="/">
-            <p class="btn btn-ghost text-xl font-bold text-slate-400 ">ShaifulMedia</p>
+            <p class="btn btn-ghost text-2xl font-bold text-slate-400 lg:pl-16 ">ShaifulMedia</p>
         </a>
         <!-- <a href="/"><img class="w-24" src="{{asset('images/logo.png')}}" alt="" class="logo" /></a> -->
 
