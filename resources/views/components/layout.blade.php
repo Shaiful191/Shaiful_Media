@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- use link for alpine.js -->
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,10 +24,27 @@
         };
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.0.0/ckeditor5.css" />
-     <script type="importmap">
-            {
+    <script>
+        module.exports = {
+            // ... other configurations
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+            // ... other configurations
+        };
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.0.0/ckeditor5.css" />
+    <script type="importmap">
+        {
                 "imports": {
                     "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/43.0.0/ckeditor5.js",
                     "ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/43.0.0/"
@@ -33,29 +52,29 @@
             }
         </script>
 
-        <script type="module">
-            import {
-                ClassicEditor,
-                Essentials,
-                Bold,
-                Italic,
-                Font,
-                Paragraph
-            } from 'ckeditor5';
+    <script type="module">
+        import {
+            ClassicEditor,
+            Essentials,
+            Bold,
+            Italic,
+            Font,
+            Paragraph
+        } from 'ckeditor5';
 
-            ClassicEditor
-                .create( document.querySelector( '#editor' ), {
-                    plugins: [ Essentials, Bold, Italic, Font, Paragraph ],
-                    toolbar: {
-                        items: [
-                            'undo', 'redo', '|', 'bold', 'italic', '|',
-                            'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
-                        ]
-                    }
-                } )
-                .then( /* ... */ )
-                .catch( /* ... */ );
-        </script>
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                plugins: [Essentials, Bold, Italic, Font, Paragraph],
+                toolbar: {
+                    items: [
+                        'undo', 'redo', '|', 'bold', 'italic', '|',
+                        'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                    ]
+                }
+            })
+            .then( /* ... */ )
+            .catch( /* ... */ );
+    </script>
     <title>ShaifulMedia</title>
 </head>
 
@@ -76,7 +95,7 @@
                     Welcome {{auth()->user()->name}}
                 </span>
             </li>
-          
+
             <li>
                 <a href="/blogs/manage" class="md:flex-col hover:text-indigo-500"><i class="fa-solid fa-gear"></i>
                     Manage blogs</a>

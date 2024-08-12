@@ -60,7 +60,7 @@ $formattedDate = $date->format('M d, Y');
                 </div>
                 <div>
 
-                    <div class="text-lg space-y-6 text-slate-400 text-start pt-3">
+                    <div class="font-sans text-lg space-y-6 text-slate-400 text-start pt-3">
                         <!-- {{$blog->description}} -->
 
                         {!! $blog->description !!}
