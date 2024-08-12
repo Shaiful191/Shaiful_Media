@@ -21,11 +21,11 @@ $formattedDate = $date->format('M d, Y');
 <x-layout>
 
     <div class="px-4 text-white bg-slate-800 pb-10">
-        <x-card class="p-10">
+        <x-card class="">
 
-            <div class="flex flex-col items-start justify-center text-center">
-                <div class="md:flex md:flex-row md:text-start">
-                    <div class="mr-5 flex-col-2">
+            <div class=" flex flex-col items-start justify-center text-center">
+                <div class=" md:flex md:flex-row md:text-start">
+                    <div class="pr-5 flex-col-2">
                         <h3 class="mb-2 text-start text-6xl font-bold text-white">{{$blog->title}}</h3>
 
                         <div class="text-start pt-3">

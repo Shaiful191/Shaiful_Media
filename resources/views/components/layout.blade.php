@@ -63,7 +63,7 @@
     <nav class="bg-slate-800 flex justify-between items-center p-5 ">
 
         <a href="/">
-            <p class="btn btn-ghost text-xl font-bold text-slate-400 lg:pl-8">ShaifulMedia</p>
+            <p class="btn btn-ghost text-xl font-bold text-slate-400 ">ShaifulMedia</p>
         </a>
         <!-- <a href="/"><img class="w-24" src="{{asset('images/logo.png')}}" alt="" class="logo" /></a> -->
 
